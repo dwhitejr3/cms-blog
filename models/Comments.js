@@ -16,6 +16,14 @@ Comments.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+
+        article_id: {
+            type: DataTypes.INTEGER,
+            refrences: {
+                model:'article',
+                key: 'id',
+            }  
+        },
         
         user_id: {
             type: DataTypes.INTEGER,
